@@ -34,6 +34,7 @@ test('Успешная регистрация пользователя ', async 
   await page.getByRole('button', { name: 'Sign up' }).click();
 });
 
+//Вариант1;//
 test('Успешная авторизация пользователя ', async ({ page }) => {
   await page.goto('https://realworld.qa.guru/');
   await page.getByRole('link', { name: ' Login' }).click();
@@ -42,4 +43,29 @@ test('Успешная авторизация пользователя ', async 
   await page.getByRole('textbox', { name: 'Password' }).click();
   await page.getByRole('textbox', { name: 'Password' }).fill('123456');
   await page.getByRole('button', { name: 'Login' }).click();
+});
+
+//Вариант2.Что добавила:
+// Проверка что после авторизации пользователь попал на главную страницу с лентой статей.
+// Удалены лишние клики по полям.
+// Добавлено больше пояснений к каждому шагу.//
+
+test('Успешная авторизация пользователя', async ({ page }) => {
+  // Переход на главную страницу
+  await page.goto('https://realworld.qa.guru/');
+
+  // Переход на страницу авторизации
+  await page.getByRole('link', { name: ' Login' }).click();
+
+  // Ввод email
+  await page.getByRole('textbox', { name: 'Email' }).fill('katrinka28i@mail.ru');
+
+  // Ввод пароля
+  await page.getByRole('textbox', { name: 'Password' }).fill('123456');
+
+  // Нажатие на кнопку "Login"
+  await page.getByRole('button', { name: 'Login' }).click();
+
+  // Проверка успешной авторизации
+  await page.waitForSelector('text=Your Feed'); // Пример проверки
 });
