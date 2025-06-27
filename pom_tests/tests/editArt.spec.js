@@ -30,6 +30,6 @@ test('Редактирование статьи', async ({ page }) => {
   const updatedContent = 'I am editing an article as part of testing.';
   await Update.update(updatedContent);
 
-  //Убедиться, что в статье отображаются изменения
+  //Убедиться, что в статье есть изменения
   await expect(page.getByText(updatedContent)).toBeVisible();
 });
