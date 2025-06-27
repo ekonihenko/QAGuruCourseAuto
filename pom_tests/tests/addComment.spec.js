@@ -14,9 +14,9 @@ test('Add Comment', async ({ page }) => {
   await Login.login('katrinka28i@mail.ru', '123456');
   await Article.createArticle('HW5', 'POM style', 'Create the article in the POM style', 'POM');
 
-  // Переход на страницу статьи
+  // Переходим на страницу статьи
   await AddCom.gotoAddComment('HW5');
 
-  // Добавить комментарий
+  // Добавляем комментарий
   await AddCom.addComment('Good information!');
 });
