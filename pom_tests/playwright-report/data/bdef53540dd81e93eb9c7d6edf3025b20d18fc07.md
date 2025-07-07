@@ -1,0 +1,150 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - navigation:
+    - link "conduit":
+      - /url: "#/"
+    - list:
+      - listitem:
+        - link " Source code":
+          - /url: https://github.com/TonyMckes/conduit-realworld-example-app
+    - list:
+      - listitem:
+        - link " Home":
+          - /url: "#/"
+      - listitem:
+        - link " New Article":
+          - /url: "#/editor"
+      - listitem:
+        - img "Kate"
+        - text: Kate
+- main:
+  - heading "HW5_1751913665252" [level=1]
+  - link "Kate":
+    - /url: "#/profile/Kate"
+    - img "Kate"
+  - link "Kate":
+    - /url: "#/profile/Kate"
+  - text: July 7, 2025
+  - button " Delete Article"
+  - button " Edit Article":
+    - link " Edit Article":
+      - /url: "#/editor/hw5-1751913665252"
+  - paragraph: Create the article in the POM style
+  - list:
+    - listitem: POM
+  - separator
+  - link "Kate":
+    - /url: "#/profile/Kate"
+    - img "Kate"
+  - link "Kate":
+    - /url: "#/profile/Kate"
+  - text: July 7, 2025
+  - button " Delete Article"
+  - button " Edit Article":
+    - link " Edit Article":
+      - /url: "#/editor/hw5-1751913665252"
+  - textbox "Write a comment..."
+  - img "Kate"
+  - button "Post Comment"
+  - paragraph: test
+  - link "Kate":
+    - /url: "#/profile/Kate"
+    - img "Kate"
+  - link "Kate":
+    - /url: "#/profile/Kate"
+  - text: July 7, 2025
+  - button ""
+  - paragraph: test
+  - link "Kate":
+    - /url: "#/profile/Kate"
+    - img "Kate"
+  - link "Kate":
+    - /url: "#/profile/Kate"
+  - text: July 7, 2025
+  - button ""
+  - paragraph: test
+  - link "Kate":
+    - /url: "#/profile/Kate"
+    - img "Kate"
+  - link "Kate":
+    - /url: "#/profile/Kate"
+  - text: July 7, 2025
+  - button ""
+  - paragraph: test
+  - link "Kate":
+    - /url: "#/profile/Kate"
+    - img "Kate"
+  - link "Kate":
+    - /url: "#/profile/Kate"
+  - text: July 7, 2025
+  - button ""
+  - paragraph: test
+  - link "Kate":
+    - /url: "#/profile/Kate"
+    - img "Kate"
+  - link "Kate":
+    - /url: "#/profile/Kate"
+  - text: July 7, 2025
+  - button ""
+  - paragraph: test
+  - link "Kate":
+    - /url: "#/profile/Kate"
+    - img "Kate"
+  - link "Kate":
+    - /url: "#/profile/Kate"
+  - text: July 7, 2025
+  - button ""
+  - paragraph: test
+  - link "Kate":
+    - /url: "#/profile/Kate"
+    - img "Kate"
+  - link "Kate":
+    - /url: "#/profile/Kate"
+  - text: July 7, 2025
+  - button ""
+  - paragraph: test
+  - link "Kate":
+    - /url: "#/profile/Kate"
+    - img "Kate"
+  - link "Kate":
+    - /url: "#/profile/Kate"
+  - text: July 7, 2025
+  - button ""
+  - paragraph: Это тестовый комментарий 1751915213059
+  - link "Kate":
+    - /url: "#/profile/Kate"
+    - img "Kate"
+  - link "Kate":
+    - /url: "#/profile/Kate"
+  - text: July 7, 2025
+  - button ""
+  - paragraph: test
+  - link "Kate":
+    - /url: "#/profile/Kate"
+    - img "Kate"
+  - link "Kate":
+    - /url: "#/profile/Kate"
+  - text: July 7, 2025
+  - button ""
+  - paragraph: test
+  - link "Kate":
+    - /url: "#/profile/Kate"
+    - img "Kate"
+  - link "Kate":
+    - /url: "#/profile/Kate"
+  - text: July 7, 2025
+  - button ""
+- contentinfo:
+  - link "conduit":
+    - /url: "#/"
+  - text: An interactive learning project from
+  - link "Thinkster":
+    - /url: https://thinkster.io
+  - text: . Code & design licensed under MIT.
+  - list:
+    - listitem:
+      - link " Source code":
+        - /url: https://github.com/TonyMckes/conduit-realworld-example-app
+```
