@@ -14,4 +14,12 @@ exports.UpdateArticle = class UpdateArticle {
     await this.articleBodyInput.fill(newContent);
     await this.updateButton.click();
   }
+
+  async verifyUpdatedContentVisible(content) {
+    await expect(this.page.getByText(content)).toBeVisible();
+  }
+
+  async verifyUpdatedContentVisible(content) {
+    await expect(this.page.getByText(content)).toBeVisible();
+  }
 };
