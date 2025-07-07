@@ -7,4 +7,12 @@ exports.DeleteArticle = class DeleteArticle {
   async delete() {
     await this.DeleteButton.click();
   }
+
+  async verifyArticleVisible(title) {
+    await expect(this.page.getByText(title)).toBeVisible();
+  }
+
+  async verifyArticleNotVisible(title) {
+    await expect(this.page.getByText(title)).not.toBeVisible();
+  }
 };
