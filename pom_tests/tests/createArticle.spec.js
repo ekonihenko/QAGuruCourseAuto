@@ -6,7 +6,7 @@ import { UpdateArticle } from '../pages/updateArticle';
 import { HomePage } from '../pages/HomePage';
 import { AddComment } from '../pages/addCom';
 
-test('Create article test', async ({ page }) => {
+test('Создание статьи', async ({ page }) => {
   await page.goto('https://realworld.qa.guru/#/');
 
   const Login = new LoginPage(page);
