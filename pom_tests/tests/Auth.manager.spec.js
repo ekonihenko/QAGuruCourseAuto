@@ -24,5 +24,5 @@ test('Logout', async ({ page }) => {
   await logoutPage.logout();
 
   // Проверяем, что разлогинились
-  await expect(page.getByRole('link', { name: ' Login' })).toBeVisible();
+  await expect(await logoutPage.getLoginButton()).toBeVisible();
 });
