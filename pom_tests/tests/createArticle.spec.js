@@ -101,18 +101,19 @@ test('Добавление комментария к статье', async ({ pag
   const homePage = new HomePage(page);
   const addComment = new AddComment(page);
 
+  // Логин
   await loginPage.gotoLoginPage();
   await loginPage.login('katrinka28i@mail.ru', '123456');
 
-  // Открываю Home и выбираю вкладку Global Feed
+  // Открытие статьи
   await homePage.selectGlobalFeed();
-
-  const selectedArticleTitle = await homePage.openFirstArticle();
+  await homePage.openFirstArticle();
 
   // Добавление комментария
   const commentText = 'test';
   await addComment.addComment(commentText);
 
-  // Проверка видимости комментария
-  await expect(page.locator('.card-text').first()).toHaveText(commentText);
+  // Проверка
+  const firstComment = await addComment.getFirstComment();
+  await expect(firstComment).toHaveText(commentText);
 });

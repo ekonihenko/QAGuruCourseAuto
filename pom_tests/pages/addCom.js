@@ -1,13 +1,8 @@
 exports.AddComment = class AddComment {
   constructor(page) {
     this.page = page;
-    this.WriteComment_textbox = page.getByRole('textbox', {
-      name: 'Write a comment...',
-    });
-    this.PostComment_button = page.getByRole('button', {
-      name: 'Post Comment',
-    });
-    this.commentContent = page.locator('div.card-text');
+    this.WriteComment_textbox = page.getByRole('textbox', { name: 'Write a comment...' });
+    this.PostComment_button = page.getByRole('button', { name: 'Post Comment' });
     this.commentText = page.locator('.card-text').first();
   }
 
@@ -18,5 +13,9 @@ exports.AddComment = class AddComment {
   async addComment(writeComment) {
     await this.WriteComment_textbox.fill(writeComment);
     await this.PostComment_button.click();
+  }
+
+  async getFirstComment() {
+    return this.commentText;
   }
 };
