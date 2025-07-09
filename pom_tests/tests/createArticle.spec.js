@@ -5,9 +5,11 @@ import { DeleteArticle } from '../pages/delArticle';
 import { UpdateArticle } from '../pages/updateArticle';
 import { HomePage } from '../pages/HomePage';
 import { AddComment } from '../pages/addCom';
+import { Goto } from '../pages/pageGoto';
 
 test('Создание статьи', async ({ page }) => {
-  await page.goto('https://realworld.qa.guru/#/');
+  const goto = new Goto(page);
+  await goto.pageGoto();
 
   const Login = new LoginPage(page);
   const Article = new CreateArticle(page);
@@ -25,10 +27,13 @@ test('Создание статьи', async ({ page }) => {
     'Create the article in the POM style',
     'POM',
   );
+
+  await expect(page.getByText(uniqueTitle)).toBeVisible();
 });
 
 test('Редактирование статьи', async ({ page }) => {
-  await page.goto('https://realworld.qa.guru/#/');
+  const goto = new Goto(page);
+  await goto.pageGoto();
 
   const Login = new LoginPage(page);
   const Article = new CreateArticle(page);
@@ -46,13 +51,18 @@ test('Редактирование статьи', async ({ page }) => {
     'POM',
   );
 
+  await expect(page.getByText(uniqueTitle)).toBeVisible();
+
   // Редактирование статьи
   const updatedContent = 'I am editing an article as part of testing.';
   await Update.update(updatedContent);
+
+  await expect(page.getByText(updatedContent)).toBeVisible();
 });
 
 test('Удаление статьи', async ({ page }) => {
-  await page.goto('https://realworld.qa.guru/#/');
+  const goto = new Goto(page);
+  await goto.pageGoto();
 
   const Login = new LoginPage(page);
   const Article = new CreateArticle(page);
@@ -69,15 +79,24 @@ test('Удаление статьи', async ({ page }) => {
     'POM',
   );
 
-  await expect(page.getByText(uniqueTitle)).toBeVisible();
+  // Проверка видимости статьи перед удалением
+  await expect(await DelArt.getArticleTitleLocator(uniqueTitle)).toBeVisible();
 
-  await DelArt.delete(uniqueTitle);
+  // Удаление статьи
+  await DelArt.delete();
 
-  await page.goto('https://realworld.qa.guru/#/');
+  // Переход на главную страницу
+  await goto.pageGoto();
   await page.getByRole('link', { name: ' Home' }).click();
+
+  // Проверка отсутствия статьи после удаления
+  await expect(await DelArt.getArticleTitleLocator(uniqueTitle)).not.toBeVisible();
 });
 
 test('Добавление комментария к статье', async ({ page }) => {
+  const goto = new Goto(page);
+  await goto.pageGoto();
+
   const loginPage = new LoginPage(page);
   const homePage = new HomePage(page);
   const addComment = new AddComment(page);
@@ -95,5 +114,5 @@ test('Добавление комментария к статье', async ({ pag
   await addComment.addComment(commentText);
 
   // Проверка видимости комментария
-  await addComment.verifyCommentVisible(commentText);
+  await expect(page.locator('.card-text').first()).toHaveText(commentText);
 });

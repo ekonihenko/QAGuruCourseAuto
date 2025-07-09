@@ -1,5 +1,10 @@
 import { test, expect } from '@playwright/test';
 
+test('POST#1 Создание элемента todo', async ({ request }) => {});
+const response = await request.get('https://apichallenges.herokuapp.com/todos', {
+  headers: { 'X-CHALLENGER': 'x-challenger-guid' },
+});
+
 test('GET#1 Request "todos" ', async ({ request }) => {
   const response = await request.get('https://apichallenges.herokuapp.com/todos', {
     headers: { 'X-CHALLENGER': 'x-challenger-guid' },
@@ -72,20 +77,4 @@ test('Get#8  404-сущность не существует', async ({ request }
 
   expect(response.status()).toBe(404);
   console.log(await response.json());
-});
-
-test('Post#1 Успешное создание задания', async ({ request }) => {
-  const response = await request.post('https://apichallenges.herokuapp.com/todos', {
-    data{
-|       "title": "Test",
-|       "doneStatus": true,
-|       "description": "I study autotesting"
-|     }
-  });
-     expect(response.status()).toBe(201);
-
-  const text = await response.text();
-  expect(text).toContain('Test');
-  console.log(await response.json());
-
 });

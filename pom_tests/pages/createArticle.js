@@ -23,8 +23,4 @@ exports.CreateArticle = class CreateArticle {
     await this.articleTagsTextbox.fill(articleTags);
     await this.publishArticleButton.click();
   }
-
-  async verifyArticleTitleVisible(title) {
-    await expect(this.page.getByRole('heading', { name: title })).toBeVisible();
-  }
 };

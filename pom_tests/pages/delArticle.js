@@ -2,17 +2,14 @@ exports.DeleteArticle = class DeleteArticle {
   constructor(page) {
     this.page = page;
     this.DeleteButton = page.getByRole('button', { name: ' Delete Article' }).first();
+    this.articleTitleLocator = (title) => page.getByText(title);
   }
 
   async delete() {
     await this.DeleteButton.click();
   }
 
-  async verifyArticleVisible(title) {
-    await expect(this.page.getByText(title)).toBeVisible();
-  }
-
-  async verifyArticleNotVisible(title) {
-    await expect(this.page.getByText(title)).not.toBeVisible();
+  async getArticleTitleLocator(title) {
+    return this.articleTitleLocator(title);
   }
 };

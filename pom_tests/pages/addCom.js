@@ -19,8 +19,4 @@ exports.AddComment = class AddComment {
     await this.WriteComment_textbox.fill(writeComment);
     await this.PostComment_button.click();
   }
-
-  async verifyCommentVisible(commentText) {
-    await expect(this.page.getByRole(commentText)).toBeVisible();
-  }
 };

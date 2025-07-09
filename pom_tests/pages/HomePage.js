@@ -4,6 +4,7 @@ exports.HomePage = class HomePage {
     this.globalFeedButton = page.getByRole('button', { name: 'Global Feed' });
     this.homeLink = page.getByRole('link', { name: ' Home' });
     this.articleLinks = page.locator('h1').filter({ hasText: /.+/ });
+    this.articleTitleLink = (title) => page.getByRole('link', { name: title }); // Локатор для статьи по заголовку
   }
 
   async gotoHomePage() {
@@ -15,18 +16,13 @@ exports.HomePage = class HomePage {
   }
 
   async openArticleByTitle(title) {
-    await this.page.getByRole('link', { name: title }).click();
+    await this.articleTitleLink(title).click();
     return title;
   }
 
   async openFirstArticle() {
-    //Получаю список статей
     const articles = await this.articleLinks;
-
-    // Получаю текст первого заголовка
     const firstArticleTitle = await articles.first().textContent();
-
-    // Кликаю на первую статью
     await articles.first().click();
     return firstArticleTitle;
   }
