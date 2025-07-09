@@ -80,7 +80,7 @@ test('Удаление статьи', async ({ page }) => {
   );
 
   // Проверка видимости статьи перед удалением
-  await expect(await DelArt.getArticleTitleLocator(uniqueTitle)).toBeVisible();
+  await expect(DelArt.articleTitle(uniqueTitle)).toBeVisible();
 
   // Удаление статьи
   await DelArt.delete();
@@ -90,7 +90,7 @@ test('Удаление статьи', async ({ page }) => {
   await page.getByRole('link', { name: ' Home' }).click();
 
   // Проверка отсутствия статьи после удаления
-  await expect(await DelArt.getArticleTitleLocator(uniqueTitle)).not.toBeVisible();
+  await expect(DelArt.articleTitle(uniqueTitle)).not.toBeVisible();
 });
 
 test('Добавление комментария к статье', async ({ page }) => {
