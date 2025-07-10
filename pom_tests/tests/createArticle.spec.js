@@ -85,9 +85,7 @@ test('Удаление статьи', async ({ page }) => {
   // Удаление статьи
   await DelArt.delete();
 
-  // Переход на главную страницу
-  await goto.pageGoto();
-  await page.getByRole('link', { name: ' Home' }).click();
+  await goto.goToHomePage();
 
   // Проверка отсутствия статьи после удаления
   await expect(DelArt.articleTitle(uniqueTitle)).not.toBeVisible();

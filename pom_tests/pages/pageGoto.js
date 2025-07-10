@@ -1,10 +1,14 @@
-export class Goto {
+exports.Goto = class Goto {
   constructor(page) {
     this.page = page;
+    this.homeLink = page.getByRole('link', { name: ' Home' });
   }
 
-  // Добавила метод открытия главной страницы
   async pageGoto() {
     await this.page.goto('https://realworld.qa.guru/#/');
   }
-}
+
+  async goToHomePage() {
+    await this.homeLink.click();
+  }
+};

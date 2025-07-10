@@ -4,7 +4,7 @@ exports.HomePage = class HomePage {
     this.globalFeedButton = page.getByRole('button', { name: 'Global Feed' });
     this.homeLink = page.getByRole('link', { name: ' Home' });
     this.articleLinks = page.locator('h1').filter({ hasText: /.+/ });
-    this.articleTitleLink = (title) => page.getByRole('link', { name: title }); // Локатор для статьи по заголовку
+    this.articleTitleLink = (title) => page.getByRole('link', { name: title });
   }
 
   async gotoHomePage() {
