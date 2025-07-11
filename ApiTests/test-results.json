@@ -1,0 +1,1764 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\playwright.config.js",
+    "rootDir": "C:/Users/katri/QAGuruCourseAuto/ApiTests/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/katri/QAGuruCourseAuto/ApiTests/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "api-tests",
+        "name": "api-tests",
+        "testDir": "C:/Users/katri/QAGuruCourseAuto/ApiTests/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.spec\\.js$/"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "3way",
+    "version": "1.53.1",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "api.js\\challenges.spec.js",
+      "file": "api.js/challenges.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "API Challenges Tests @challenges",
+          "file": "api.js/challenges.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "GET /challenges - получение списка всех challenges @smoke @get",
+              "ok": true,
+              "tags": [
+                "challenges",
+                "smoke",
+                "get"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api-tests",
+                  "projectName": "api-tests",
+                  "results": [
+                    {
+                      "workerIndex": 43,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1101,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-11T14:19:09.583Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\test-results\\api.js-challenges-API-Chal-d3572-а-всех-challenges-smoke-get-api-tests\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ef4e847a24fdbe6afe87-36f442c2e7fa43fc992d",
+              "file": "api.js/challenges.spec.js",
+              "line": 4,
+              "column": 7
+            },
+            {
+              "title": "POST /challenger - создание нового challenger токена @smoke @post",
+              "ok": true,
+              "tags": [
+                "challenges",
+                "smoke",
+                "post"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api-tests",
+                  "projectName": "api-tests",
+                  "results": [
+                    {
+                      "workerIndex": 43,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 392,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-11T14:19:10.742Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\test-results\\api.js-challenges-API-Chal-65aca-hallenger-токена-smoke-post-api-tests\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ef4e847a24fdbe6afe87-e2cd51807b8dafd93319",
+              "file": "api.js/challenges.spec.js",
+              "line": 19,
+              "column": 7
+            },
+            {
+              "title": "GET /heartbeat - проверка доступности API @smoke @get",
+              "ok": true,
+              "tags": [
+                "challenges",
+                "smoke",
+                "get"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api-tests",
+                  "projectName": "api-tests",
+                  "results": [
+                    {
+                      "workerIndex": 43,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 379,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-11T14:19:11.166Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\test-results\\api.js-challenges-API-Chal-abf79-а-доступности-API-smoke-get-api-tests\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ef4e847a24fdbe6afe87-e148b779652dffee77e2",
+              "file": "api.js/challenges.spec.js",
+              "line": 34,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "api.js\\todos-delete.spec.js",
+      "file": "api.js/todos-delete.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "TODO API - DELETE запросы @todos @delete",
+          "file": "api.js/todos-delete.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "DELETE /todos/:id - удаление существующего TODO @smoke",
+              "ok": true,
+              "tags": [
+                "todos",
+                "delete",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api-tests",
+                  "projectName": "api-tests",
+                  "results": [
+                    {
+                      "workerIndex": 44,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1386,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-11T14:19:09.601Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\test-results\\api.js-todos-delete-TODO-A-6af52-ие-существующего-TODO-smoke-api-tests\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6d2745657da5db0effce-766a191217404846425d",
+              "file": "api.js/todos-delete.spec.js",
+              "line": 4,
+              "column": 7
+            },
+            {
+              "title": "DELETE /todos/:id - попытка удалить несуществующий TODO @negative",
+              "ok": true,
+              "tags": [
+                "todos",
+                "delete",
+                "negative"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api-tests",
+                  "projectName": "api-tests",
+                  "results": [
+                    {
+                      "workerIndex": 44,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 424,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-11T14:19:11.126Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\test-results\\api.js-todos-delete-TODO-A-8e866-есуществующий-TODO-negative-api-tests\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6d2745657da5db0effce-c484a560ef3ed89a07ff",
+              "file": "api.js/todos-delete.spec.js",
+              "line": 23,
+              "column": 7
+            },
+            {
+              "title": "DELETE /todos/:id - повторное удаление уже удаленного TODO @negative",
+              "ok": true,
+              "tags": [
+                "todos",
+                "delete",
+                "negative"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api-tests",
+                  "projectName": "api-tests",
+                  "results": [
+                    {
+                      "workerIndex": 44,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 743,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-11T14:19:11.616Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\test-results\\api.js-todos-delete-TODO-A-04249-же-удаленного-TODO-negative-api-tests\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6d2745657da5db0effce-364462e5b69a1a5fbcfc",
+              "file": "api.js/todos-delete.spec.js",
+              "line": 39,
+              "column": 7
+            },
+            {
+              "title": "DELETE /todos/:id - проверка что другие TODO не затронуты @isolation",
+              "ok": true,
+              "tags": [
+                "todos",
+                "delete",
+                "isolation"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api-tests",
+                  "projectName": "api-tests",
+                  "results": [
+                    {
+                      "workerIndex": 44,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 928,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-11T14:19:12.410Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\test-results\\api.js-todos-delete-TODO-A-1be4f-TODO-не-затронуты-isolation-api-tests\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6d2745657da5db0effce-ac8a580ab8e3d2c1a483",
+              "file": "api.js/todos-delete.spec.js",
+              "line": 64,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "api.js\\todos-get.spec.js",
+      "file": "api.js/todos-get.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "TODO API - GET запросы @todos @get",
+          "file": "api.js/todos-get.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "GET /todos - получение списка всех TODO @smoke",
+              "ok": true,
+              "tags": [
+                "todos",
+                "get",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api-tests",
+                  "projectName": "api-tests",
+                  "results": [
+                    {
+                      "workerIndex": 45,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1064,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-11T14:19:09.617Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\test-results\\api.js-todos-get-TODO-API--fa737-ение-списка-всех-TODO-smoke-api-tests\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "10a7f9100edc08f46742-9802594eb285a367f0ce",
+              "file": "api.js/todos-get.spec.js",
+              "line": 4,
+              "column": 7
+            },
+            {
+              "title": "GET /todos/:id - получение TODO по ID @smoke",
+              "ok": true,
+              "tags": [
+                "todos",
+                "get",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api-tests",
+                  "projectName": "api-tests",
+                  "results": [
+                    {
+                      "workerIndex": 45,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 560,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Created: { id: \u001b[33m11\u001b[39m, title: \u001b[32m'Test TODO'\u001b[39m, doneStatus: \u001b[33mfalse\u001b[39m, description: \u001b[32m'Test'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "GET Response: {\"todos\":[{\"id\":11,\"title\":\"Test TODO\",\"doneStatus\":false,\"description\":\"Test\"}]}\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-11T14:19:10.770Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\test-results\\api.js-todos-get-TODO-API--1a79d--получение-TODO-по-ID-smoke-api-tests\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "10a7f9100edc08f46742-e75034453b7e23dce85d",
+              "file": "api.js/todos-get.spec.js",
+              "line": 24,
+              "column": 7
+            },
+            {
+              "title": "GET /todos/:id - получение несуществующего TODO @negative",
+              "ok": true,
+              "tags": [
+                "todos",
+                "get",
+                "negative"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api-tests",
+                  "projectName": "api-tests",
+                  "results": [
+                    {
+                      "workerIndex": 45,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 373,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "GET non-existent TODO status: \u001b[33m404\u001b[39m\n"
+                        },
+                        {
+                          "text": "Error response: { errorMessages: [ \u001b[32m'Could not find an instance with todos/99999'\u001b[39m ] }\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-11T14:19:11.372Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\test-results\\api.js-todos-get-TODO-API--a067e-существующего-TODO-negative-api-tests\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "10a7f9100edc08f46742-4b67bb84ae1d4da82646",
+              "file": "api.js/todos-get.spec.js",
+              "line": 47,
+              "column": 7
+            },
+            {
+              "title": "GET /todos?doneStatus=true - фильтрация по статусу выполнения @filter",
+              "ok": true,
+              "tags": [
+                "todos",
+                "get",
+                "filter"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api-tests",
+                  "projectName": "api-tests",
+                  "results": [
+                    {
+                      "workerIndex": 45,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 532,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-11T14:19:11.768Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\test-results\\api.js-todos-get-TODO-API--0357d-о-статусу-выполнения-filter-api-tests\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "10a7f9100edc08f46742-812e11fab72e17903c42",
+              "file": "api.js/todos-get.spec.js",
+              "line": 81,
+              "column": 7
+            },
+            {
+              "title": "GET /todos?doneStatus=false - фильтрация невыполненных TODO @filter",
+              "ok": true,
+              "tags": [
+                "todos",
+                "get",
+                "filter"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api-tests",
+                  "projectName": "api-tests",
+                  "results": [
+                    {
+                      "workerIndex": 45,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 558,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-11T14:19:12.336Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\test-results\\api.js-todos-get-TODO-API--1cd0c-я-невыполненных-TODO-filter-api-tests\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "10a7f9100edc08f46742-ed98c2ed7c2a1a7eab16",
+              "file": "api.js/todos-get.spec.js",
+              "line": 102,
+              "column": 7
+            },
+            {
+              "title": "HEAD /todos - проверка заголовков без тела ответа @headers",
+              "ok": true,
+              "tags": [
+                "todos",
+                "get",
+                "headers"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api-tests",
+                  "projectName": "api-tests",
+                  "results": [
+                    {
+                      "workerIndex": 45,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 414,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-11T14:19:12.923Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\test-results\\api.js-todos-get-TODO-API--bf2e7-ков-без-тела-ответа-headers-api-tests\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "10a7f9100edc08f46742-f58a24deb42d26f5ba99",
+              "file": "api.js/todos-get.spec.js",
+              "line": 123,
+              "column": 7
+            },
+            {
+              "title": "OPTIONS /todos - получение доступных методов @options",
+              "ok": true,
+              "tags": [
+                "todos",
+                "get",
+                "options"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api-tests",
+                  "projectName": "api-tests",
+                  "results": [
+                    {
+                      "workerIndex": 45,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 859,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-11T14:19:13.363Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\test-results\\api.js-todos-get-TODO-API--bf019-е-доступных-методов-options-api-tests\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "10a7f9100edc08f46742-4e6a6c9a47ed7b4737ee",
+              "file": "api.js/todos-get.spec.js",
+              "line": 136,
+              "column": 7
+            },
+            {
+              "title": "GET /todos поддерживает XML формат @headers",
+              "ok": true,
+              "tags": [
+                "todos",
+                "get",
+                "headers"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api-tests",
+                  "projectName": "api-tests",
+                  "results": [
+                    {
+                      "workerIndex": 45,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 203,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-11T14:19:14.257Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\test-results\\api.js-todos-get-TODO-API--e10e5-ерживает-XML-формат-headers-api-tests\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "10a7f9100edc08f46742-bba4bd2c8a22b7e6daae",
+              "file": "api.js/todos-get.spec.js",
+              "line": 153,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "api.js\\todos-patch.spec.js",
+      "file": "api.js/todos-patch.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "TODO API - PATCH запросы @todos @patch",
+          "file": "api.js/todos-patch.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "PATCH /todos/:id - частичное обновление title @smoke",
+              "ok": false,
+              "tags": [
+                "todos",
+                "patch",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api-tests",
+                  "projectName": "api-tests",
+                  "results": [
+                    {
+                      "workerIndex": 46,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 1232,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m405\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m405\u001b[39m\n    at C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\tests\\api.js\\todos-patch.spec.js:22:31",
+                        "location": {
+                          "file": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\tests\\api.js\\todos-patch.spec.js",
+                          "column": 31,
+                          "line": 22
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 20 |\u001b[39m\n \u001b[90m 21 |\u001b[39m     \u001b[90m// Проверка статус кода\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 22 |\u001b[39m     expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 23 |\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[90m// Проверка бизнес-логики\u001b[39m\n \u001b[90m 25 |\u001b[39m     \u001b[36mconst\u001b[39m data \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\tests\\api.js\\todos-patch.spec.js",
+                            "column": 31,
+                            "line": 22
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m405\u001b[39m\n\n\u001b[0m \u001b[90m 20 |\u001b[39m\n \u001b[90m 21 |\u001b[39m     \u001b[90m// Проверка статус кода\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 22 |\u001b[39m     expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 23 |\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[90m// Проверка бизнес-логики\u001b[39m\n \u001b[90m 25 |\u001b[39m     \u001b[36mconst\u001b[39m data \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\tests\\api.js\\todos-patch.spec.js:22:31\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-11T14:19:09.844Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\test-results\\api.js-todos-patch-TODO-AP-1f1d8-чное-обновление-title-smoke-api-tests\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\tests\\api.js\\todos-patch.spec.js",
+                        "column": 31,
+                        "line": 22
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "95df6bfc57297d7ec709-8fadad6aa6b5e52bf812",
+              "file": "api.js/todos-patch.spec.js",
+              "line": 14,
+              "column": 7
+            },
+            {
+              "title": "PATCH /todos/:id - частичное обновление doneStatus @status",
+              "ok": false,
+              "tags": [
+                "todos",
+                "patch",
+                "status"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api-tests",
+                  "projectName": "api-tests",
+                  "results": [
+                    {
+                      "workerIndex": 47,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 1208,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m405\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m405\u001b[39m\n    at C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\tests\\api.js\\todos-patch.spec.js:40:31",
+                        "location": {
+                          "file": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\tests\\api.js\\todos-patch.spec.js",
+                          "column": 31,
+                          "line": 40
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 38 |\u001b[39m\n \u001b[90m 39 |\u001b[39m     \u001b[90m// Проверка статус кода\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 40 |\u001b[39m     expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 41 |\u001b[39m\n \u001b[90m 42 |\u001b[39m     \u001b[90m// Проверка бизнес-логики\u001b[39m\n \u001b[90m 43 |\u001b[39m     \u001b[36mconst\u001b[39m data \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\tests\\api.js\\todos-patch.spec.js",
+                            "column": 31,
+                            "line": 40
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m405\u001b[39m\n\n\u001b[0m \u001b[90m 38 |\u001b[39m\n \u001b[90m 39 |\u001b[39m     \u001b[90m// Проверка статус кода\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 40 |\u001b[39m     expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 41 |\u001b[39m\n \u001b[90m 42 |\u001b[39m     \u001b[90m// Проверка бизнес-логики\u001b[39m\n \u001b[90m 43 |\u001b[39m     \u001b[36mconst\u001b[39m data \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\tests\\api.js\\todos-patch.spec.js:40:31\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-11T14:19:12.908Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\test-results\\api.js-todos-patch-TODO-AP-497c9-бновление-doneStatus-status-api-tests\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\tests\\api.js\\todos-patch.spec.js",
+                        "column": 31,
+                        "line": 40
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "95df6bfc57297d7ec709-50c14c1482506c70973b",
+              "file": "api.js/todos-patch.spec.js",
+              "line": 32,
+              "column": 7
+            },
+            {
+              "title": "PATCH /todos/:id - частичное обновление description @description",
+              "ok": false,
+              "tags": [
+                "todos",
+                "patch",
+                "description"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api-tests",
+                  "projectName": "api-tests",
+                  "results": [
+                    {
+                      "workerIndex": 48,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 1177,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m405\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m405\u001b[39m\n    at C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\tests\\api.js\\todos-patch.spec.js:59:31",
+                        "location": {
+                          "file": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\tests\\api.js\\todos-patch.spec.js",
+                          "column": 31,
+                          "line": 59
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 57 |\u001b[39m\n \u001b[90m 58 |\u001b[39m     \u001b[90m// Проверка статус кода\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 59 |\u001b[39m     expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 60 |\u001b[39m\n \u001b[90m 61 |\u001b[39m     \u001b[90m// Проверка бизнес-логики\u001b[39m\n \u001b[90m 62 |\u001b[39m     \u001b[36mconst\u001b[39m data \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\tests\\api.js\\todos-patch.spec.js",
+                            "column": 31,
+                            "line": 59
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m405\u001b[39m\n\n\u001b[0m \u001b[90m 57 |\u001b[39m\n \u001b[90m 58 |\u001b[39m     \u001b[90m// Проверка статус кода\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 59 |\u001b[39m     expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 60 |\u001b[39m\n \u001b[90m 61 |\u001b[39m     \u001b[90m// Проверка бизнес-логики\u001b[39m\n \u001b[90m 62 |\u001b[39m     \u001b[36mconst\u001b[39m data \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\tests\\api.js\\todos-patch.spec.js:59:31\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-11T14:19:15.415Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\test-results\\api.js-todos-patch-TODO-AP-bc677-ние-description-description-api-tests\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\tests\\api.js\\todos-patch.spec.js",
+                        "column": 31,
+                        "line": 59
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "95df6bfc57297d7ec709-693f6f1630b89fbaae00",
+              "file": "api.js/todos-patch.spec.js",
+              "line": 49,
+              "column": 7
+            },
+            {
+              "title": "PATCH /todos/:id - обновление нескольких полей @multiple",
+              "ok": false,
+              "tags": [
+                "todos",
+                "patch",
+                "multiple"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api-tests",
+                  "projectName": "api-tests",
+                  "results": [
+                    {
+                      "workerIndex": 49,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1198,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m405\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m405\u001b[39m\n    at C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\tests\\api.js\\todos-patch.spec.js:79:31",
+                        "location": {
+                          "file": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\tests\\api.js\\todos-patch.spec.js",
+                          "column": 31,
+                          "line": 79
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 77 |\u001b[39m\n \u001b[90m 78 |\u001b[39m     \u001b[90m// Проверка статус кода\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 79 |\u001b[39m     expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 80 |\u001b[39m\n \u001b[90m 81 |\u001b[39m     \u001b[90m// Проверка бизнес-логики\u001b[39m\n \u001b[90m 82 |\u001b[39m     \u001b[36mconst\u001b[39m data \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\tests\\api.js\\todos-patch.spec.js",
+                            "column": 31,
+                            "line": 79
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m405\u001b[39m\n\n\u001b[0m \u001b[90m 77 |\u001b[39m\n \u001b[90m 78 |\u001b[39m     \u001b[90m// Проверка статус кода\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 79 |\u001b[39m     expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 80 |\u001b[39m\n \u001b[90m 81 |\u001b[39m     \u001b[90m// Проверка бизнес-логики\u001b[39m\n \u001b[90m 82 |\u001b[39m     \u001b[36mconst\u001b[39m data \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\tests\\api.js\\todos-patch.spec.js:79:31\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-11T14:19:17.415Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\test-results\\api.js-todos-patch-TODO-AP-9dae2-е-нескольких-полей-multiple-api-tests\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\tests\\api.js\\todos-patch.spec.js",
+                        "column": 31,
+                        "line": 79
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "95df6bfc57297d7ec709-6ac5014c5e086adcc81b",
+              "file": "api.js/todos-patch.spec.js",
+              "line": 68,
+              "column": 7
+            },
+            {
+              "title": "PATCH /todos/:id - попытка обновить несуществующий TODO @negative",
+              "ok": false,
+              "tags": [
+                "todos",
+                "patch",
+                "negative"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api-tests",
+                  "projectName": "api-tests",
+                  "results": [
+                    {
+                      "workerIndex": 50,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1314,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m405\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m405\u001b[39m\n    at C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\tests\\api.js\\todos-patch.spec.js:96:31",
+                        "location": {
+                          "file": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\tests\\api.js\\todos-patch.spec.js",
+                          "column": 31,
+                          "line": 96
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 94 |\u001b[39m\n \u001b[90m 95 |\u001b[39m     \u001b[90m// Проверка статус кода\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 96 |\u001b[39m     expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m404\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 97 |\u001b[39m\n \u001b[90m 98 |\u001b[39m     \u001b[90m// Проверка бизнес-логики\u001b[39m\n \u001b[90m 99 |\u001b[39m     \u001b[36mconst\u001b[39m data \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\tests\\api.js\\todos-patch.spec.js",
+                            "column": 31,
+                            "line": 96
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m405\u001b[39m\n\n\u001b[0m \u001b[90m 94 |\u001b[39m\n \u001b[90m 95 |\u001b[39m     \u001b[90m// Проверка статус кода\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 96 |\u001b[39m     expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m404\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 97 |\u001b[39m\n \u001b[90m 98 |\u001b[39m     \u001b[90m// Проверка бизнес-логики\u001b[39m\n \u001b[90m 99 |\u001b[39m     \u001b[36mconst\u001b[39m data \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\tests\\api.js\\todos-patch.spec.js:96:31\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-11T14:19:19.651Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\test-results\\api.js-todos-patch-TODO-AP-67b76-есуществующий-TODO-negative-api-tests\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\tests\\api.js\\todos-patch.spec.js",
+                        "column": 31,
+                        "line": 96
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "95df6bfc57297d7ec709-12d6c7f2a2fcae721553",
+              "file": "api.js/todos-patch.spec.js",
+              "line": 88,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "api.js\\todos-post.spec.js",
+      "file": "api.js/todos-post.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "TODO API - POST запросы @todos @post",
+          "file": "api.js/todos-post.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "POST /todos - создание нового TODO @smoke",
+              "ok": true,
+              "tags": [
+                "todos",
+                "post",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api-tests",
+                  "projectName": "api-tests",
+                  "results": [
+                    {
+                      "workerIndex": 43,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 384,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-11T14:19:11.589Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\test-results\\api.js-todos-post-TODO-API-dcdce--создание-нового-TODO-smoke-api-tests\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c262ef3b1dfb809734f9-30c3a627e464c611cd55",
+              "file": "api.js/todos-post.spec.js",
+              "line": 4,
+              "column": 7
+            },
+            {
+              "title": "POST /todos - создание TODO только с обязательными полями @minimal",
+              "ok": true,
+              "tags": [
+                "todos",
+                "post",
+                "minimal"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api-tests",
+                  "projectName": "api-tests",
+                  "results": [
+                    {
+                      "workerIndex": 43,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 395,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-11T14:19:12.003Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\test-results\\api.js-todos-post-TODO-API-2215e-бязательными-полями-minimal-api-tests\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c262ef3b1dfb809734f9-a1012ca66ef70d1aa8d4",
+              "file": "api.js/todos-post.spec.js",
+              "line": 21,
+              "column": 7
+            },
+            {
+              "title": "POST /todos - создание TODO без обязательного поля title @negative",
+              "ok": true,
+              "tags": [
+                "todos",
+                "post",
+                "negative"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api-tests",
+                  "projectName": "api-tests",
+                  "results": [
+                    {
+                      "workerIndex": 43,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 379,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-11T14:19:12.437Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\test-results\\api.js-todos-post-TODO-API-25ec9-ельного-поля-title-negative-api-tests\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c262ef3b1dfb809734f9-8f89b1001d90f24c0d4b",
+              "file": "api.js/todos-post.spec.js",
+              "line": 44,
+              "column": 7
+            },
+            {
+              "title": "POST /todos - doneStatus не обязательное поле",
+              "ok": true,
+              "tags": [
+                "todos",
+                "post"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api-tests",
+                  "projectName": "api-tests",
+                  "results": [
+                    {
+                      "workerIndex": 43,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 380,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-11T14:19:12.832Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\test-results\\api.js-todos-post-TODO-API-765b8-Status-не-обязательное-поле-api-tests\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c262ef3b1dfb809734f9-b9779c444de2c2bf5ed2",
+              "file": "api.js/todos-post.spec.js",
+              "line": 62,
+              "column": 7
+            },
+            {
+              "title": "POST /todos - создание TODO с пустым title @negative",
+              "ok": true,
+              "tags": [
+                "todos",
+                "post",
+                "negative"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api-tests",
+                  "projectName": "api-tests",
+                  "results": [
+                    {
+                      "workerIndex": 43,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 397,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-11T14:19:13.227Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\test-results\\api.js-todos-post-TODO-API-9c2e4-ODO-с-пустым-title-negative-api-tests\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c262ef3b1dfb809734f9-f038ee0e59d5feb617e2",
+              "file": "api.js/todos-post.spec.js",
+              "line": 70,
+              "column": 7
+            },
+            {
+              "title": "POST /todos - невалидный doneStatus возвращает 400 @negative",
+              "ok": true,
+              "tags": [
+                "todos",
+                "post",
+                "negative"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api-tests",
+                  "projectName": "api-tests",
+                  "results": [
+                    {
+                      "workerIndex": 43,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 378,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-11T14:19:13.640Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\test-results\\api.js-todos-post-TODO-API-ae433-tus-возвращает-400-negative-api-tests\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c262ef3b1dfb809734f9-52ee9c346fa2911171b9",
+              "file": "api.js/todos-post.spec.js",
+              "line": 86,
+              "column": 7
+            },
+            {
+              "title": "POST /todos - создание TODO с очень длинным title @boundary",
+              "ok": true,
+              "tags": [
+                "todos",
+                "post",
+                "boundary"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api-tests",
+                  "projectName": "api-tests",
+                  "results": [
+                    {
+                      "workerIndex": 43,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 380,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-11T14:19:14.040Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\test-results\\api.js-todos-post-TODO-API-2599c-чень-длинным-title-boundary-api-tests\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c262ef3b1dfb809734f9-3ab27872861775b34fc3",
+              "file": "api.js/todos-post.spec.js",
+              "line": 94,
+              "column": 7
+            },
+            {
+              "title": "POST /todos - создание TODO со слишком длинным title @negative @boundary",
+              "ok": true,
+              "tags": [
+                "todos",
+                "post",
+                "negative",
+                "boundary"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api-tests",
+                  "projectName": "api-tests",
+                  "results": [
+                    {
+                      "workerIndex": 43,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 379,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-11T14:19:14.436Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\test-results\\api.js-todos-post-TODO-API-abbbc-ным-title-negative-boundary-api-tests\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c262ef3b1dfb809734f9-df8ea820ab47fd2511b0",
+              "file": "api.js/todos-post.spec.js",
+              "line": 109,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "api.js\\todos-put.spec.js",
+      "file": "api.js/todos-put.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "TODO API - PUT запросы @todos @put",
+          "file": "api.js/todos-put.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "PUT /todos/:id - полное обновление TODO @smoke",
+              "ok": true,
+              "tags": [
+                "todos",
+                "put",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api-tests",
+                  "projectName": "api-tests",
+                  "results": [
+                    {
+                      "workerIndex": 44,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 567,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-11T14:19:13.393Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\test-results\\api.js-todos-put-TODO-API--f3e4d-олное-обновление-TODO-smoke-api-tests\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "654c4e6ed014988d7507-a3e095f19c1d6382eedb",
+              "file": "api.js/todos-put.spec.js",
+              "line": 13,
+              "column": 7
+            },
+            {
+              "title": "PUT /todos/:id - обновление только обязательных полей @minimal",
+              "ok": true,
+              "tags": [
+                "todos",
+                "put",
+                "minimal"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api-tests",
+                  "projectName": "api-tests",
+                  "results": [
+                    {
+                      "workerIndex": 44,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 537,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-11T14:19:13.991Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\test-results\\api.js-todos-put-TODO-API--6a3c7--обязательных-полей-minimal-api-tests\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "654c4e6ed014988d7507-864af3dc7baf35a35ed2",
+              "file": "api.js/todos-put.spec.js",
+              "line": 35,
+              "column": 7
+            },
+            {
+              "title": "PUT /todos/:id - обновление несуществующего TODO @negative",
+              "ok": true,
+              "tags": [
+                "todos",
+                "put",
+                "negative"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api-tests",
+                  "projectName": "api-tests",
+                  "results": [
+                    {
+                      "workerIndex": 44,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 537,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-11T14:19:14.551Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\test-results\\api.js-todos-put-TODO-API--7dac5-существующего-TODO-negative-api-tests\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "654c4e6ed014988d7507-a028830530d96305ff03",
+              "file": "api.js/todos-put.spec.js",
+              "line": 55,
+              "column": 7
+            },
+            {
+              "title": "PUT /todos/:id - обновление без обязательного поля title @negative",
+              "ok": true,
+              "tags": [
+                "todos",
+                "put",
+                "negative"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api-tests",
+                  "projectName": "api-tests",
+                  "results": [
+                    {
+                      "workerIndex": 44,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 540,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-11T14:19:15.108Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\test-results\\api.js-todos-put-TODO-API--cc857-ельного-поля-title-negative-api-tests\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "654c4e6ed014988d7507-1074bf508fe690398c73",
+              "file": "api.js/todos-put.spec.js",
+              "line": 72,
+              "column": 7
+            },
+            {
+              "title": "PUT /todos/:id - изменение статуса выполнения @status",
+              "ok": true,
+              "tags": [
+                "todos",
+                "put",
+                "status"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api-tests",
+                  "projectName": "api-tests",
+                  "results": [
+                    {
+                      "workerIndex": 44,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 731,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-11T14:19:15.667Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\katri\\QAGuruCourseAuto\\ApiTests\\test-results\\api.js-todos-put-TODO-API--555b8-е-статуса-выполнения-status-api-tests\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "654c4e6ed014988d7507-5699d804060b7fb78660",
+              "file": "api.js/todos-put.spec.js",
+              "line": 88,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-07-11T14:19:07.090Z",
+    "duration": 13941.126000000164,
+    "expected": 28,
+    "skipped": 0,
+    "unexpected": 5,
+    "flaky": 0
+  }
+}
